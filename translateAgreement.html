@@ -1,0 +1,126 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>翻译格式约定 &#8212; 可能是目前翻译最完整的版本</title>
+    <link rel="stylesheet" href="_static/my_theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="https://js.users.51.la/4842261.js"></script>
+    <script type="text/javascript" src="https://flume.liyifeng.org/_static/update.js"></script>
+    <script type="text/javascript" src="_static/stat.js"></script>
+    <script async="async" type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-132785326-2"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li class="nav-item nav-item-0"><a href="index.html"></a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="id1">
+<h1>翻译格式约定<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>本文档翻译自官方手册 <a class="reference external" href="http://flume.apache.org/releases/content/1.8.0/FlumeUserGuide.html">Flume 1.8 User Guide</a> ，官方手册是使用sphinx管理，所以本文档也是基于原rst文件的基础上进行编辑翻译，
+这样能够保证翻译版与英文原版排版一致，方便查阅。翻译项目刚刚创建的时候最新的Flume版本是1.8，而如今Flume 1.9已经发布了。不过不必担心，整个Flume 1.x版本并无大的结构性变化，只是在增加新的功能特性以及bug的修复，
+不影响我们学习Flume。</p>
+<ul class="simple">
+<li>文档的段落结构与官方文档完全一致；</li>
+<li>基本上涉及到的专属名词都没有进行翻译，比如：source、channel、sink、event等，还有各个章节的标题也是一样，都是使用原来的英文标题，这样方便进行中英对照查找；</li>
+<li>部分章节、参数描述、组件的介绍比较难懂，译者增加了一些补充的注释。<strong>译者补充的内容几乎都是以TIP格式插入</strong>。</li>
+<li>翻译过程中发现并纠正了很多原文档中的小错误，比如NetCat UDP Source的 <em>remoteAddressHeader</em> 属性没有描述、Thrift Sink的参数错误等等，还有一些组件的的参数太过复杂，译者对照着源码增加了
+具体的例子来解释这些参数。</li>
+</ul>
+<div class="admonition hint">
+<p class="first admonition-title">提示</p>
+<p class="last">所有这种蓝色的提示框中的内容都是译者后加的。</p>
+</div>
+</div>
+<div class="section" id="id2">
+<h1>勘误<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h1>
+<p>翻译或者理解有误的地方请您指出来。</p>
+<p>Github ： <a class="reference external" href="https://github.com/liyifeng/flumeUserGuideCnDoc">https://github.com/liyifeng/flumeUserGuideCnDoc</a></p>
+<p>Gitee  ： <a class="reference external" href="https://gitee.com/lief/flumeUserGuideCN">https://gitee.com/lief/flumeUserGuideCN</a></p>
+<p>勘误也可以发送邮件到 <a class="reference external" href="mailto:flume&#37;&#52;&#48;liyifeng&#46;org">flume<span>&#64;</span>liyifeng<span>&#46;</span>org</a> ，不胜感激。</p>
+</div>
+<div class="section" id="id3">
+<h1>版权声明<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h1>
+<ul class="simple">
+<li>Apache Flume™ 以及本页面使用的Flume logo等都归属于Apache软件基金会。</li>
+<li>本文档未经授权不允许用于任何商业用途。</li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h1>译者<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h1>
+<p>liyifeng</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/flume-logo.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">翻译格式约定</a></li>
+<li><a class="reference internal" href="#id2">勘误</a></li>
+<li><a class="reference internal" href="#id3">版权声明</a></li>
+<li><a class="reference internal" href="#id4">译者</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3>快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="转向" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="总目录"
+             >索引</a></li>
+        <li class="nav-item nav-item-0"><a href="index.html"></a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, liyifeng.
+      最后更新于 2019-11-12 16:59:40.
+    </div>
+  </body>
+</html>
